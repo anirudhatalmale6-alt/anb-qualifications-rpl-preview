@@ -4,21 +4,16 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<title>Qualifications &amp; RPL — A&amp;B First Aid Training (preview)</title>
+<title>Certificate III in Individual Support (CHC33021) — A&amp;B First Aid Training (preview)</title>
 <style>
-:root{
-  --ink:#2F1D3A; --ink-soft:#5b4a68; --red:#E53935; --teal:#0E7C86;
-  --line:#e6e1ea; --bg:#faf8fb; --card:#fff;
-}
+:root{ --ink:#2F1D3A; --ink-soft:#5b4a68; --red:#E53935; --teal:#0E7C86; --line:#e6e1ea; --bg:#faf8fb; }
 *{box-sizing:border-box}
 body{margin:0;font-family:"Segoe UI",Arial,Helvetica,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
-.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.wrap{max-width:1060px;margin:0 auto;padding:0 20px}
 a{color:var(--teal)}
 
-/* preview strip */
 .preview{background:#111;color:#ffd54f;font-size:13px;padding:8px 0;text-align:center}
 
-/* header */
 header{background:var(--ink);color:#fff;padding:14px 0}
 header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
 .brand{font-weight:800;letter-spacing:.5px}
@@ -26,63 +21,72 @@ header .wrap{display:flex;align-items:center;justify-content:space-between;gap:1
 nav a{color:#e8dff0;text-decoration:none;margin-left:18px;font-size:14px}
 nav a.on{color:#fff;border-bottom:2px solid var(--red);padding-bottom:3px}
 
-/* hero */
-.hero{background:linear-gradient(135deg,#2F1D3A 0%,#4a2b5e 100%);color:#fff;padding:54px 0 60px}
-.hero h1{font-size:40px;line-height:1.15;margin:0 0 14px;max-width:16ch}
-.hero p{font-size:18px;color:#e5d9ee;max-width:56ch;margin:0 0 26px}
+.hero{background:linear-gradient(135deg,#2F1D3A 0%,#4a2b5e 100%);color:#fff;padding:50px 0 56px}
+.codechip{display:inline-block;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:13px;
+  background:#ffffff1f;border:1px solid #ffffff3d;padding:5px 12px;border-radius:20px;margin-bottom:16px}
+.hero h1{font-size:38px;line-height:1.15;margin:0 0 14px;max-width:18ch}
+.hero p{font-size:18px;color:#e5d9ee;max-width:58ch;margin:0 0 26px}
 .btn{display:inline-block;background:var(--red);color:#fff;text-decoration:none;font-weight:700;
-     padding:14px 26px;border-radius:6px;border:0;font-size:16px;cursor:pointer}
+     padding:14px 26px;border-radius:6px;border:0;font-size:16px;cursor:pointer;font-family:inherit}
 .btn:hover{background:#c62828}
 .btn-ghost{background:transparent;border:2px solid #ffffff66;margin-left:10px}
 .btn-ghost:hover{background:#ffffff1a}
+.trust{margin-top:24px;font-size:14.5px;color:#d3c2df}
+.trust b{color:#fff}
 
-/* compliance banner */
 .compliance{background:#fff8e1;border-top:3px solid #f6b93b;border-bottom:1px solid #f1dfae;padding:16px 0;font-size:14.5px}
 .compliance strong{color:#7a5900}
 
-/* sections */
-section{padding:52px 0}
-h2{font-size:28px;margin:0 0 8px}
-.lede{color:var(--ink-soft);max-width:62ch;margin:0 0 28px}
+section{padding:50px 0}
+h2{font-size:27px;margin:0 0 8px}
+.lede{color:var(--ink-soft);max-width:62ch;margin:0 0 26px}
 
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:18px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:20px;display:flex;flex-direction:column}
-.code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12.5px;color:#fff;background:var(--teal);
-      display:inline-block;padding:3px 9px;border-radius:4px;margin-bottom:10px;align-self:flex-start}
-.card h3{font-size:17px;margin:0 0 8px;line-height:1.35}
-.card p{font-size:14.5px;color:var(--ink-soft);margin:0 0 14px;flex:1}
-.issuer{font-size:12.5px;color:var(--ink-soft);border-top:1px dashed var(--line);padding-top:10px;margin-top:auto}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.path{background:#fff;border:1px solid var(--line);border-radius:10px;padding:24px;border-top:5px solid var(--teal)}
+.path.alt{border-top-color:var(--ink)}
+.path h3{margin:0 0 4px;font-size:20px}
+.path .who{color:var(--red);font-weight:700;font-size:13.5px;text-transform:uppercase;letter-spacing:.6px;margin-bottom:12px}
+.path ul{margin:0;padding-left:20px;color:var(--ink-soft);font-size:15px}
+.path li{margin-bottom:7px}
 
-.steps{counter-reset:s;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px;margin-top:10px}
+.spec{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+.spec div{background:#fff;border:1px solid var(--line);border-radius:8px;padding:16px 18px}
+.spec h4{margin:0 0 4px;font-size:16px}
+.spec p{margin:0;font-size:14px;color:var(--ink-soft)}
+
+.facts{background:#fff;border:1px solid var(--line);border-radius:10px;padding:6px 24px}
+.facts .row{display:flex;gap:18px;padding:14px 0;border-bottom:1px solid var(--line);font-size:15px}
+.facts .row:last-child{border-bottom:0}
+.facts .k{flex:0 0 210px;font-weight:600}
+.facts .v{color:var(--ink-soft)}
+
+.steps{counter-reset:s;display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:22px;margin-top:10px}
 .step{position:relative;padding-left:52px}
 .step:before{counter-increment:s;content:counter(s);position:absolute;left:0;top:0;width:38px;height:38px;border-radius:50%;
   background:var(--ink);color:#fff;display:grid;place-items:center;font-weight:800}
 .step h4{margin:4px 0 6px;font-size:16px}
 .step p{margin:0;font-size:14.5px;color:var(--ink-soft)}
 
-/* checker */
-.checker{background:#fff;border:1px solid var(--line);border-radius:12px;padding:0;overflow:hidden;
-         box-shadow:0 6px 24px rgba(47,29,58,.07)}
+.checker{background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden;box-shadow:0 6px 24px rgba(47,29,58,.07)}
 .checker .head{background:var(--ink);color:#fff;padding:18px 24px}
 .checker .head h3{margin:0;font-size:19px}
 .checker .head p{margin:4px 0 0;font-size:13.5px;color:#d9c9e4}
 .bar{height:6px;background:#efe9f3}
-.bar i{display:block;height:100%;background:var(--red);width:20%;transition:width .3s}
+.bar i{display:block;height:100%;background:var(--red);width:0;transition:width .3s}
 .q{padding:26px 24px}
 .q h4{margin:0 0 4px;font-size:19px}
 .q .hint{color:var(--ink-soft);font-size:14px;margin:0 0 18px}
 .opts{display:grid;gap:10px}
-.opt{border:2px solid var(--line);border-radius:8px;padding:13px 16px;cursor:pointer;font-size:15px;background:#fff;text-align:left}
+.opt{border:2px solid var(--line);border-radius:8px;padding:13px 16px;cursor:pointer;font-size:15px;background:#fff;
+     text-align:left;font-family:inherit}
 .opt:hover{border-color:var(--teal);background:#f2fbfc}
-.opt.sel{border-color:var(--teal);background:#e8f6f7;font-weight:600}
 .field{display:block;margin-bottom:12px}
 .field span{display:block;font-size:13.5px;font-weight:600;margin-bottom:5px}
 .field input{width:100%;padding:11px 12px;border:1px solid #cfc6d6;border-radius:6px;font-size:15px;font-family:inherit}
 .nav{display:flex;justify-content:space-between;align-items:center;padding:16px 24px;border-top:1px solid var(--line);background:#fbfafc}
-.link{background:none;border:0;color:var(--ink-soft);cursor:pointer;font-size:14px;text-decoration:underline}
+.link{background:none;border:0;color:var(--ink-soft);cursor:pointer;font-size:14px;text-decoration:underline;font-family:inherit}
 .result{padding:30px 24px}
-.result .tick{width:56px;height:56px;border-radius:50%;background:#e6f6ec;color:#1e7d3c;display:grid;place-items:center;
-  font-size:30px;margin-bottom:14px}
+.result .tick{width:56px;height:56px;border-radius:50%;background:#e6f6ec;color:#1e7d3c;display:grid;place-items:center;font-size:30px;margin-bottom:14px}
 .result h4{margin:0 0 8px;font-size:23px}
 .result ul{margin:14px 0 0;padding-left:20px;color:var(--ink-soft);font-size:15px}
 .hide{display:none}
@@ -91,158 +95,175 @@ h2{font-size:28px;margin:0 0 8px}
 .faq summary{cursor:pointer;font-weight:600}
 .faq p{margin:10px 0 0;color:var(--ink-soft);font-size:15px}
 
-footer{background:var(--ink);color:#cbbdd6;padding:30px 0;font-size:13.5px;margin-top:20px}
+footer{background:var(--ink);color:#cbbdd6;padding:30px 0;font-size:13.5px}
 footer strong{color:#fff}
 
-@media(max-width:640px){ .hero h1{font-size:30px} .btn-ghost{margin:10px 0 0 0;display:block;text-align:center} }
+@media(max-width:720px){ .two{grid-template-columns:1fr} .hero h1{font-size:29px}
+  .btn-ghost{margin:10px 0 0;display:block;text-align:center} .facts .row{flex-direction:column;gap:2px} .facts .k{flex:none} }
 </style>
 </head>
 <body>
 
-<div class="preview">PREVIEW / DRAFT — partner RTO details are placeholders. Not published anywhere public.</div>
+<div class="preview">PREVIEW / DRAFT — college name and RTO code are placeholders. Not published anywhere public.</div>
 
 <header><div class="wrap">
   <div class="brand">A &amp; B FIRST AID TRAINING<span>RTO 46055</span></div>
   <nav>
     <a href="#">First Aid Courses</a>
-    <a href="#" class="on">Qualifications &amp; RPL</a>
+    <a href="#" class="on">Certificate III Individual Support</a>
     <a href="#">Contact</a>
   </nav>
 </div></header>
 
 <div class="hero"><div class="wrap">
-  <h1>Get qualified for the experience you already have</h1>
-  <p>If you have been working in aged care, childcare, disability or community services for years, you may already have most of what a nationally recognised qualification asks for. Recognition of Prior Learning turns that experience into the certificate.</p>
-  <a href="#check" class="btn">Check if I'm eligible — 2 minutes</a>
-  <a href="#how" class="btn btn-ghost">How it works</a>
+  <div class="codechip">CHC33021 — nationally recognised</div>
+  <h1>Certificate III in Individual Support</h1>
+  <p>The qualification you need to work in aged care, home care and disability support — and if you are already doing the work, you may be able to get it recognised instead of sitting the whole course.</p>
+  <a href="#check" class="btn">Check which pathway suits me</a>
+  <a href="#pathways" class="btn btn-ghost">See both pathways</a>
+  <div class="trust">Over <b>100 people</b> have started this qualification through us.</div>
 </div></div>
 
 <div class="compliance"><div class="wrap">
-  <strong>Who issues your qualification:</strong> the qualifications on this page are delivered and issued by
-  <strong>[Partner RTO Name], RTO code [XXXXX]</strong>. A&amp;B First Aid Training provides enrolment, guidance and
-  student support services under a written third-party agreement. A&amp;B First Aid Training (RTO 46055) issues its own
-  nationally recognised first aid and CPR certificates — those are listed under
-  <a href="#">First Aid Courses</a>.
+  <strong>Who delivers and issues this qualification:</strong> CHC33021 Certificate III in Individual Support is
+  delivered, assessed and issued by <strong>[College Name], RTO code [XXXXX]</strong>.
+  A&amp;B First Aid Training refers and enrols students on their behalf under a written agreement — we do not deliver,
+  assess or issue this qualification. A&amp;B First Aid Training (RTO 46055) issues its own nationally recognised
+  first aid and CPR certificates only, listed under <a href="#">First Aid Courses</a>.
 </div></div>
 
-<section id="how"><div class="wrap">
-  <h2>How Recognition of Prior Learning works</h2>
-  <p class="lede">You are not sitting through a course you have already lived. You are proving what you can already do.</p>
-  <div class="steps">
-    <div class="step"><h4>Free eligibility check</h4><p>Answer a few questions about your work history. We tell you straight away whether RPL is realistic for you.</p></div>
-    <div class="step"><h4>Evidence gathering</h4><p>We give you a simple checklist — payslips, position descriptions, references, work samples — and help you put it together.</p></div>
-    <div class="step"><h4>Assessment by the RTO</h4><p>The partner RTO's qualified assessor reviews your evidence and may ask for a short competency conversation.</p></div>
-    <div class="step"><h4>Certificate issued</h4><p>Any gaps are filled with targeted training. Then the partner RTO issues your nationally recognised qualification.</p></div>
+<section id="pathways"><div class="wrap">
+  <h2>Two ways to get it</h2>
+  <p class="lede">Which one applies to you depends entirely on whether you are already working in the sector.</p>
+  <div class="two">
+    <div class="path">
+      <h3>Recognition of Prior Learning</h3>
+      <div class="who">Already working in care</div>
+      <ul>
+        <li>You are already doing the work — personal care, home care, aged care, disability support.</li>
+        <li>Instead of sitting the course, you prove what you already do: payslips, position description, a supervisor reference, work samples.</li>
+        <li>The college's assessor reviews your evidence and may have a short competency conversation with you.</li>
+        <li>Anything genuinely missing is filled with targeted gap training — just that part, not the whole qualification.</li>
+        <li>Usually the faster and cheaper route if your experience is current.</li>
+      </ul>
+    </div>
+    <div class="path alt">
+      <h3>The full course</h3>
+      <div class="who">New to the industry</div>
+      <ul>
+        <li>You complete all 15 units — 9 core plus 6 electives — with the college.</li>
+        <li>Includes the mandatory 120 hours of work placement in a real care setting.</li>
+        <li>The college arranges and supervises the placement.</li>
+        <li>You finish job-ready with the same nationally recognised qualification.</li>
+        <li>The right path if you have no paid experience in care yet.</li>
+      </ul>
+    </div>
   </div>
 </div></section>
 
 <section style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)"><div class="wrap">
-  <h2>Qualifications available</h2>
-  <p class="lede">Sample list for this preview — the final list depends on which partner RTO you sign with and what is on their scope of registration.</p>
-  <div class="grid">
-    <div class="card">
-      <span class="code">CHC33021</span>
-      <h3>Certificate III in Individual Support (Ageing)</h3>
-      <p>For personal care workers and support workers already on the floor in aged care or home care.</p>
-      <div class="issuer">Delivered &amp; issued by [Partner RTO], RTO [XXXXX]</div>
-    </div>
-    <div class="card">
-      <span class="code">CHC30121</span>
-      <h3>Certificate III in Early Childhood Education and Care</h3>
-      <p>For educators and assistants working in long day care, preschool or family day care.</p>
-      <div class="issuer">Delivered &amp; issued by [Partner RTO], RTO [XXXXX]</div>
-    </div>
-    <div class="card">
-      <span class="code">CHC43121</span>
-      <h3>Certificate IV in Disability Support</h3>
-      <p>For experienced disability support workers moving into higher-responsibility roles.</p>
-      <div class="issuer">Delivered &amp; issued by [Partner RTO], RTO [XXXXX]</div>
-    </div>
-    <div class="card">
-      <span class="code">CHC43315</span>
-      <h3>Certificate IV in Mental Health</h3>
-      <p>For workers supporting people with mental health needs in community settings.</p>
-      <div class="issuer">Delivered &amp; issued by [Partner RTO], RTO [XXXXX]</div>
-    </div>
-    <div class="card">
-      <span class="code">CHC52021</span>
-      <h3>Diploma of Community Services</h3>
-      <p>For case workers and team leaders ready to formalise years of frontline experience.</p>
-      <div class="issuer">Delivered &amp; issued by [Partner RTO], RTO [XXXXX]</div>
-    </div>
-    <div class="card" style="border-style:dashed;background:#faf8fb">
-      <span class="code" style="background:var(--ink)">A&amp;B</span>
-      <h3>First Aid &amp; CPR — our own courses</h3>
-      <p>HLTAID009, HLTAID011 and HLTAID012 are delivered and issued by us directly.</p>
-      <div class="issuer">Delivered &amp; issued by A&amp;B First Aid Training, RTO 46055</div>
-    </div>
+  <h2>Choose your specialisation</h2>
+  <p class="lede">CHC33021 can be awarded with a specialisation on the certificate. It comes down to which electives you do.</p>
+  <div class="spec">
+    <div><h4>Ageing</h4><p>Residential aged care and home care for older people.</p></div>
+    <div><h4>Disability</h4><p>Supporting people living with disability, including NDIS settings.</p></div>
+    <div><h4>Ageing and Disability</h4><p>Both, which keeps the most doors open when you apply for work.</p></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <h2>The details</h2>
+  <div class="facts">
+    <div class="row"><div class="k">Course code and title</div><div class="v">CHC33021 Certificate III in Individual Support</div></div>
+    <div class="row"><div class="k">Delivered and issued by</div><div class="v">[College Name], RTO code [XXXXX]</div></div>
+    <div class="row"><div class="k">A&amp;B's role</div><div class="v">Referral and enrolment agent under a written agreement. We do not deliver, assess or issue this qualification.</div></div>
+    <div class="row"><div class="k">Nationally recognised</div><div class="v">Yes — it is on the national register at training.gov.au and recognised by employers Australia-wide.</div></div>
+    <div class="row"><div class="k">Structure</div><div class="v">15 units — 9 core and 6 electives</div></div>
+    <div class="row"><div class="k">Work placement</div><div class="v">120 hours required. If you are already employed in care, your current work may count towards this.</div></div>
+    <div class="row"><div class="k">You will need</div><div class="v">A USI (Unique Student Identifier) — free, and we will help you get one. Most employers also require a police check and NDIS worker screening.</div></div>
+    <div class="row"><div class="k">Cost</div><div class="v">[to confirm — or we leave this off and let people enquire]</div></div>
+  </div>
+</div></section>
+
+<section style="background:#fff;border-top:1px solid var(--line)"><div class="wrap">
+  <h2>What happens after you enquire</h2>
+  <div class="steps">
+    <div class="step"><h4>We call you</h4><p>A short chat about your work history so we can tell you honestly whether RPL is realistic or whether the full course suits you better.</p></div>
+    <div class="step"><h4>We enrol you with the college</h4><p>We handle the paperwork and hand you over to the college with everything already in order.</p></div>
+    <div class="step"><h4>Assessment or training</h4><p>The college assesses your evidence, or delivers the course and arranges your placement.</p></div>
+    <div class="step"><h4>Certificate issued</h4><p>The college issues your nationally recognised qualification. We stay in touch to make sure nothing stalls.</p></div>
   </div>
 </div></section>
 
 <section id="check"><div class="wrap">
-  <h2>Free eligibility check</h2>
-  <p class="lede">Two minutes, no obligation. You will get an answer on screen straight away.</p>
+  <h2>Which pathway suits me?</h2>
+  <p class="lede">Five questions, about a minute. You will get an honest answer on screen — including if the answer is "do the full course".</p>
 
   <div class="checker">
     <div class="head">
-      <h3>Am I eligible for RPL?</h3>
-      <p id="stepLabel">Question 1 of 5</p>
+      <h3>Free pathway check — CHC33021</h3>
+      <p id="stepLabel">Question 1 of 6</p>
     </div>
     <div class="bar"><i id="bar"></i></div>
-
     <div id="qbox" class="q"></div>
-
     <div class="nav" id="navbar">
       <button class="link" id="back">Back</button>
-      <span style="font-size:13px;color:var(--ink-soft)">Your answers are only used to assess eligibility.</span>
+      <span style="font-size:13px;color:var(--ink-soft)">Your answers are only used to work out your pathway.</span>
     </div>
   </div>
 </div></section>
 
 <section class="faq" style="background:#fff;border-top:1px solid var(--line)"><div class="wrap">
   <h2>Common questions</h2>
-  <details><summary>Is the qualification actually nationally recognised?</summary>
-    <p>Yes. It is issued by a Registered Training Organisation against a qualification on the national register, and it carries the same weight as one earned by sitting the full course.</p></details>
-  <details><summary>Does A&amp;B issue these certificates?</summary>
-    <p>No. A&amp;B First Aid Training issues its own first aid and CPR certificates only. The qualifications on this page are assessed and issued by the partner RTO named at the top of this page. We handle your enrolment, guidance and support.</p></details>
-  <details><summary>What if I have gaps in my evidence?</summary>
-    <p>That is normal. The assessor identifies exactly what is missing and you complete targeted gap training for that part only — not the whole qualification.</p></details>
-  <details><summary>How long does it take?</summary>
-    <p>It depends how quickly you gather your evidence. Most people are done within a few weeks to a few months of starting.</p></details>
+  <details><summary>Who actually gives me the certificate?</summary>
+    <p>[College Name], RTO code [XXXXX]. They deliver the training, do the assessing and issue the qualification. A&amp;B First Aid Training refers and enrols you with them. We do not issue this qualification — we only issue our own first aid and CPR certificates.</p></details>
+  <details><summary>Is it the same certificate as doing it directly with the college?</summary>
+    <p>Yes, identical. Same code, same college, same nationally recognised qualification. Going through us just means someone walks you through it instead of leaving you to work it out alone.</p></details>
+  <details><summary>Does it cost more to go through you?</summary>
+    <p>No. You pay the college's normal fee.</p></details>
+  <details><summary>I have been in aged care for years — do I really have to do the whole course?</summary>
+    <p>Probably not. That is exactly what Recognition of Prior Learning is for. Do the pathway check above and we will tell you where you stand.</p></details>
+  <details><summary>How long does RPL take?</summary>
+    <p>It depends how quickly you gather your evidence. The assessment itself is not the slow part — collecting payslips, your position description and a supervisor reference usually is.</p></details>
 </div></section>
 
 <footer><div class="wrap">
   <strong>A &amp; B First Aid Training</strong> — RTO 46055 · Unit 2, 156 Queen Street, St Marys NSW 2760 · 0423 427 765<br>
-  Qualifications shown on this page are delivered and issued by [Partner RTO Name], RTO code [XXXXX], under a written third-party agreement.
+  CHC33021 Certificate III in Individual Support is delivered, assessed and issued by [College Name], RTO code [XXXXX].
+  A&amp;B First Aid Training acts as a referral and enrolment agent under a written agreement and does not deliver,
+  assess or issue this qualification.
 </div></footer>
 
 <script>
-/* --- eligibility checker --------------------------------------------------
-   Five short questions, then a result. Scored so that real experience passes
-   and someone with none is redirected to a full course instead of a dead end. */
+/* --- pathway checker -------------------------------------------------------
+   Sorts an enquiry into: RPL / part-RPL / full course, then captures the lead. */
 const QS = [
-  { key:'field', q:'Which area do you work in?', hint:'Pick the closest match.',
-    opts:[['Aged care or home care',2],['Childcare or early education',2],['Disability support',2],
-          ['Community services or mental health',2],['None of these',0]] },
-  { key:'years', q:'How long have you worked in that area?', hint:'Paid work, including part-time and casual.',
-    opts:[['Less than 1 year',0],['1 to 2 years',1],['3 to 5 years',2],['More than 5 years',3]] },
-  { key:'current', q:'Are you working in the role now, or recently?', hint:'Assessors need to see current skills.',
-    opts:[['Yes, working now',2],['Left within the last 12 months',1],['Left more than a year ago',0]] },
-  { key:'evidence', q:'Can you get evidence from your workplace?', hint:'Payslips, position description, a reference from a supervisor.',
+  { key:'exp', q:'Are you currently working in aged care, home care or disability support?',
+    hint:'Paid work — full-time, part-time or casual all count.',
+    opts:[['Yes, working now',3],['Left within the last 12 months',2],['Worked in it years ago',1],['No, never',0]] },
+  { key:'years', q:'How long have you worked in care altogether?', hint:'Add it all up, across employers.',
+    opts:[['Less than 6 months',0],['6 to 12 months',1],['1 to 3 years',2],['More than 3 years',3]] },
+  { key:'tasks', q:'Does your work include hands-on personal care?',
+    hint:'Showering, dressing, mobility, medication prompting, personal hygiene.',
+    opts:[['Yes, every shift',3],['Sometimes',2],['No, mostly domestic or social support',1],['Not applicable',0]] },
+  { key:'evidence', q:'Could you get evidence from your workplace?',
+    hint:'Payslips, position description, a reference from your supervisor.',
     opts:[['Yes, all of that',2],['Some of it',1],['Not sure',1],['No',0]] },
-  { key:'usi', q:'Do you have a USI (Unique Student Identifier)?', hint:'Every student needs one. We can help you create it — it is free.',
-    opts:[['Yes',1],['No, but I can get one',1],['I do not know what that is',1]] }
+  { key:'spec', q:'Which specialisation are you after?', hint:'You can change this later.',
+    opts:[['Ageing',0],['Disability',0],['Ageing and Disability',0],['Not sure yet',0]] }
 ];
+const SPECS = ['Ageing','Disability','Ageing and Disability','Not sure yet'];
 
-let step = 0, score = 0, answers = {}, lead = {};
+let step = 0, answers = {}, lead = {};
 const qbox = document.getElementById('qbox'), bar = document.getElementById('bar'),
       label = document.getElementById('stepLabel'), back = document.getElementById('back'),
       navbar = document.getElementById('navbar');
+const TOTAL = QS.length + 1;
 
 function paintQuestion(){
   const item = QS[step];
-  label.textContent = 'Question ' + (step+1) + ' of ' + (QS.length+1);
-  bar.style.width = ((step)/(QS.length+1)*100) + '%';
+  label.textContent = 'Question ' + (step + 1) + ' of ' + TOTAL;
+  bar.style.width = (step / TOTAL * 100) + '%';
   navbar.classList.remove('hide');
   back.style.visibility = step === 0 ? 'hidden' : 'visible';
   qbox.className = 'q';
@@ -250,7 +271,7 @@ function paintQuestion(){
   const box = qbox.querySelector('.opts');
   item.opts.forEach(function(o, i){
     const b = document.createElement('button');
-    b.className = 'opt' + (answers[item.key] === i ? ' sel' : '');
+    b.className = 'opt';
     b.textContent = o[0];
     b.onclick = function(){ answers[item.key] = i; step++; step < QS.length ? paintQuestion() : paintDetails(); };
     box.appendChild(b);
@@ -258,15 +279,16 @@ function paintQuestion(){
 }
 
 function paintDetails(){
-  label.textContent = 'Last step — where do we send your result?';
-  bar.style.width = (QS.length/(QS.length+1)*100) + '%';
+  label.textContent = 'Last step of ' + TOTAL;
+  bar.style.width = (QS.length / TOTAL * 100) + '%';
   back.style.visibility = 'visible';
+  qbox.className = 'q';
   qbox.innerHTML =
-    '<h4>Almost done</h4><p class="hint">So we can send your eligibility result and the evidence checklist.</p>' +
+    '<h4>Almost done</h4><p class="hint">So we can call you back with your pathway and what it costs.</p>' +
     '<label class="field"><span>Full name</span><input id="f_name" placeholder="Your name"></label>' +
     '<label class="field"><span>Email</span><input id="f_email" type="email" placeholder="you@example.com"></label>' +
     '<label class="field"><span>Mobile</span><input id="f_phone" placeholder="04.."></label>' +
-    '<button class="btn" id="go" style="width:100%">See my result</button>';
+    '<button class="btn" id="go" style="width:100%">Show me my pathway</button>';
   document.getElementById('go').onclick = function(){
     lead = { name:  document.getElementById('f_name').value.trim(),
              email: document.getElementById('f_email').value.trim(),
@@ -277,37 +299,39 @@ function paintDetails(){
 }
 
 function paintResult(){
-  score = QS.reduce(function(t, item){ return t + item.opts[answers[item.key]][1]; }, 0);
-  const strong = score >= 8, maybe = score >= 5 && score < 8;
+  const score = QS.reduce(function(t, item){ return t + item.opts[answers[item.key]][1]; }, 0);
+  const spec  = SPECS[answers.spec];
+  const rpl   = score >= 8, part = score >= 5 && score < 8;
   bar.style.width = '100%';
-  label.textContent = 'Your result';
+  label.textContent = 'Your pathway';
   navbar.classList.add('hide');
   qbox.className = 'result';
 
   let head, body;
-  if (strong) {
-    head = 'Good news — RPL looks like a strong fit';
-    body = 'Based on your answers you have the experience an assessor is looking for. The next step is putting your evidence together.';
-  } else if (maybe) {
-    head = 'RPL may be possible for you';
-    body = 'You have relevant experience, but the assessor will need to look closely at your evidence before confirming. That review is free.';
+  if (rpl) {
+    head = 'Recognition of Prior Learning looks like your pathway';
+    body = 'you have the kind of current, hands-on experience an assessor is looking for. You should not have to sit the full course.';
+  } else if (part) {
+    head = 'RPL plus some gap training';
+    body = 'you have real experience to build on, but there will likely be gaps to fill. That is still much shorter than the full course.';
   } else {
-    head = "RPL isn't the right path right now";
-    body = 'You do not have enough recent workplace experience for a recognition pathway yet — but you can still get the qualification by doing the course itself, and we can point you to it.';
+    head = 'The full course is the right start for you';
+    body = 'you do not have enough hands-on care experience for a recognition pathway yet — so the full qualification, with the 120 hours of placement arranged for you, is the way in. Plenty of people start exactly here.';
   }
 
   qbox.innerHTML =
-    '<div class="tick">' + (strong ? '&#10003;' : maybe ? '&#33;' : '&#8594;') + '</div>' +
+    '<div class="tick">' + (rpl ? '&#10003;' : part ? '&#33;' : '&#8594;') + '</div>' +
     '<h4>' + head + '</h4>' +
     '<p style="color:var(--ink-soft);font-size:15.5px;margin:0">' +
-      (lead.name ? lead.name.split(' ')[0] + ', ' + body.charAt(0).toLowerCase() + body.slice(1) : body) + '</p>' +
+      (lead.name ? lead.name.split(' ')[0] + ', ' + body : body.charAt(0).toUpperCase() + body.slice(1)) + '</p>' +
     '<ul>' +
-      '<li>A copy of this result has been sent to ' + (lead.email || 'your email') + '.</li>' +
-      '<li>One of our team will call you on ' + (lead.phone || 'your number') + ' within one business day.</li>' +
-      '<li>You will receive the evidence checklist so you can start gathering documents now.</li>' +
+      '<li>Qualification: CHC33021 Certificate III in Individual Support' +
+        (spec && spec !== 'Not sure yet' ? ' (' + spec + ')' : '') + '</li>' +
+      '<li>We will call you on ' + (lead.phone || 'your number') + ' within one business day with the cost and the next step.</li>' +
+      '<li>A copy of this goes to ' + (lead.email || 'your email') + ', with the evidence checklist if RPL applies to you.</li>' +
     '</ul>' +
-    '<p style="font-size:13px;color:var(--ink-soft);margin-top:18px">Eligibility is indicative only. The formal assessment decision is made by [Partner RTO Name], RTO code [XXXXX].</p>' +
-    '<p style="font-size:13px;color:#a08fae;margin-top:6px"><em>Preview note: in the live version this submits to your Student Management System as a new lead — nothing is emailed from this demo.</em></p>';
+    '<p style="font-size:13px;color:var(--ink-soft);margin-top:18px">This is a guide only. The formal decision on RPL is made by the assessor at [College Name], RTO code [XXXXX].</p>' +
+    '<p style="font-size:13px;color:#a08fae;margin-top:6px"><em>Preview note: in the live version this lands in your Student Management System as a new lead — nothing is emailed from this demo.</em></p>';
 }
 
 back.onclick = function(){ if (step > 0) { step--; paintQuestion(); } };
