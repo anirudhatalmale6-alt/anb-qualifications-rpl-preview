@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Qualifications &amp; RPL — A&amp;B First Aid Training (preview)</title>
+<style>
+:root{
+  --ink:#2F1D3A; --ink-soft:#5b4a68; --red:#E53935; --teal:#0E7C86;
+  --line:#e6e1ea; --bg:#faf8fb; --card:#fff;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:"Segoe UI",Arial,Helvetica,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+a{color:var(--teal)}
+
+/* preview strip */
+.preview{background:#111;color:#ffd54f;font-size:13px;padding:8px 0;text-align:center}
+
+/* header */
+header{background:var(--ink);color:#fff;padding:14px 0}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.brand{font-weight:800;letter-spacing:.5px}
+.brand span{display:block;font-size:11px;font-weight:600;letter-spacing:2px;color:#d9b8e8}
+nav a{color:#e8dff0;text-decoration:none;margin-left:18px;font-size:14px}
+nav a.on{color:#fff;border-bottom:2px solid var(--red);padding-bottom:3px}
+
+/* hero */
+.hero{background:linear-gradient(135deg,#2F1D3A 0%,#4a2b5e 100%);color:#fff;padding:54px 0 60px}
+.hero h1{font-size:40px;line-height:1.15;margin:0 0 14px;max-width:16ch}
+.hero p{font-size:18px;color:#e5d9ee;max-width:56ch;margin:0 0 26px}
+.btn{display:inline-block;background:var(--red);color:#fff;text-decoration:none;font-weight:700;
+     padding:14px 26px;border-radius:6px;border:0;font-size:16px;cursor:pointer}
+.btn:hover{background:#c62828}
+.btn-ghost{background:transparent;border:2px solid #ffffff66;margin-left:10px}
+.btn-ghost:hover{background:#ffffff1a}
+
+/* compliance banner */
+.compliance{background:#fff8e1;border-top:3px solid #f6b93b;border-bottom:1px solid #f1dfae;padding:16px 0;font-size:14.5px}
+.compliance strong{color:#7a5900}
+
+/* sections */
+section{padding:52px 0}
+h2{font-size:28px;margin:0 0 8px}
+.lede{color:var(--ink-soft);max-width:62ch;margin:0 0 28px}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:20px;display:flex;flex-direction:column}
+.code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12.5px;color:#fff;background:var(--teal);
+      display:inline-block;padding:3px 9px;border-radius:4px;margin-bottom:10px;align-self:flex-start}
+.card h3{font-size:17px;margin:0 0 8px;line-height:1.35}
+.card p{font-size:14.5px;color:var(--ink-soft);margin:0 0 14px;flex:1}
+.issuer{font-size:12.5px;color:var(--ink-soft);border-top:1px dashed var(--line);padding-top:10px;margin-top:auto}
+
+.steps{counter-reset:s;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px;margin-top:10px}
+.step{position:relative;padding-left:52px}
+.step:before{counter-increment:s;content:counter(s);position:absolute;left:0;top:0;width:38px;height:38px;border-radius:50%;
+  background:var(--ink);color:#fff;display:grid;place-items:center;font-weight:800}
+.step h4{margin:4px 0 6px;font-size:16px}
+.step p{margin:0;font-size:14.5px;color:var(--ink-soft)}
+
+/* checker */
+.checker{background:#fff;border:1px solid var(--line);border-radius:12px;padding:0;overflow:hidden;
+         box-shadow:0 6px 24px rgba(47,29,58,.07)}
+.checker .head{background:var(--ink);color:#fff;padding:18px 24px}
+.checker .head h3{margin:0;font-size:19px}
+.checker .head p{margin:4px 0 0;font-size:13.5px;color:#d9c9e4}
+.bar{height:6px;background:#efe9f3}
+.bar i{display:block;height:100%;background:var(--red);width:20%;transition:width .3s}
+.q{padding:26px 24px}
+.q h4{margin:0 0 4px;font-size:19px}
+.q .hint{color:var(--ink-soft);font-size:14px;margin:0 0 18px}
+.opts{display:grid;gap:10px}
+.opt{border:2px solid var(--line);border-radius:8px;padding:13px 16px;cursor:pointer;font-size:15px;background:#fff;text-align:left}
+.opt:hover{border-color:var(--teal);background:#f2fbfc}
+.opt.sel{border-color:var(--teal);background:#e8f6f7;font-weight:600}
+.field{display:block;margin-bottom:12px}
+.field span{display:block;font-size:13.5px;font-weight:600;margin-bottom:5px}
+.field input{width:100%;padding:11px 12px;border:1px solid #cfc6d6;border-radius:6px;font-size:15px;font-family:inherit}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:16px 24px;border-top:1px solid var(--line);background:#fbfafc}
+.link{background:none;border:0;color:var(--ink-soft);cursor:pointer;font-size:14px;text-decoration:underline}
+.result{padding:30px 24px}
+.result .tick{width:56px;height:56px;border-radius:50%;background:#e6f6ec;color:#1e7d3c;display:grid;place-items:center;
+  font-size:30px;margin-bottom:14px}
+.result h4{margin:0 0 8px;font-size:23px}
+.result ul{margin:14px 0 0;padding-left:20px;color:var(--ink-soft);font-size:15px}
+.hide{display:none}
+
+.faq details{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px 18px;margin-bottom:10px}
+.faq summary{cursor:pointer;font-weight:600}
+.faq p{margin:10px 0 0;color:var(--ink-soft);font-size:15px}
+
+footer{background:var(--ink);color:#cbbdd6;padding:30px 0;font-size:13.5px;margin-top:20px}
+footer strong{color:#fff}
+
+@media(max-width:640px){ .hero h1{font-size:30px} .btn-ghost{margin:10px 0 0 0;display:block;text-align:center} }
+</style>
+</head>
+<body>
+
+<div class="preview">PREVIEW / DRAFT — partner RTO details are placeholders. Not published anywhere public.</div>
+
+<header><div class="wrap">
+  <div class="brand">A &amp; B FIRST AID TRAINING<span>RTO 46055</span></div>
+  <nav>
+    <a href="#">First Aid Courses</a>
+    <a href="#" class="on">Qualifications &amp; RPL</a>
+    <a href="#">Contact</a>
+  </nav>
+</div></header>
+
+<div class="hero"><div class="wrap">
+  <h1>Get qualified for the experience you already have</h1>
+  <p>If you have been working in aged care, childcare, disability or community services for years, you may already have most of what a nationally recognised qualification asks for. Recognition of Prior Learning turns that experience into the certificate.</p>
+  <a href="#check" class="btn">Check if I'm eligible — 2 minutes</a>
+  <a href="#how" class="btn btn-ghost">How it works</a>
+</div></div>
+
+<div class="compliance"><div class="wrap">
+  <strong>Who issues your qualification:</strong> the qualifications on this page are delivered and issued by
+  <strong>[Partner RTO Name], RTO code [XXXXX]</strong>. A&amp;B First Aid Training provides enrolment, guidance and
+  student support services under a written third-party agreement. A&amp;B First Aid Training (RTO 46055) issues its own
+  nationally recognised first aid and CPR certificates — those are listed under
+  <a href="#">First Aid Courses</a>.
+</div></div>
+
+<section id="how"><div class="wrap">
+  <h2>How Recognition of Prior Learning works</h2>
+  <p class="lede">You are not sitting through a course you have already lived. You are proving what you can already do.</p>
+  <div class="steps">
+    <div class="step"><h4>Free eligibility check</h4><p>Answer a few questions about your work history. We tell you straight away whether RPL is realistic for you.</p></div>
+    <div class="step"><h4>Evidence gathering</h4><p>We give you a simple checklist — payslips, position descriptions, references, work samples — and help you put it together.</p></div>
+    <div class="step"><h4>Assessment by the RTO</h4><p>The partner RTO's qualified assessor reviews your evidence and may ask for a short competency conversation.</p></div>
+    <div class="step"><h4>Certificate issued</h4><p>Any gaps are filled with targeted training. Then the partner RTO issues your nationally recognised qualification.</p></div>
+  </div>
+</div></section>
+
+<section style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)"><div class="wrap">
+  <h2>Qualifications available</h2>
+  <p class="lede">Sample list for this preview — the final list depends on which partner RTO you sign with and what is on their scope of registration.</p>
+  <div class="grid">
+    <div class="card">
+      <span class="code">CHC33021</span>
+      <h3>Certificate III in Individual Support (Ageing)</h3>
+      <p>For personal care workers and support workers already on the floor in aged care or home care.</p>
+      <div class="issuer">Delivered &amp; issued by [Partner RTO], RTO [XXXXX]</div>
+    </div>
+    <div class="card">
+      <span class="code">CHC30121</span>
+      <h3>Certificate III in Early Childhood Education and Care</h3>
+      <p>For educators and assistants working in long day care, preschool or family day care.</p>
+      <div class="issuer">Delivered &amp; issued by [Partner RTO], RTO [XXXXX]</div>
+    </div>
+    <div class="card">
+      <span class="code">CHC43121</span>
+      <h3>Certificate IV in Disability Support</h3>
+      <p>For experienced disability support workers moving into higher-responsibility roles.</p>
+      <div class="issuer">Delivered &amp; issued by [Partner RTO], RTO [XXXXX]</div>
+    </div>
+    <div class="card">
+      <span class="code">CHC43315</span>
+      <h3>Certificate IV in Mental Health</h3>
+      <p>For workers supporting people with mental health needs in community settings.</p>
+      <div class="issuer">Delivered &amp; issued by [Partner RTO], RTO [XXXXX]</div>
+    </div>
+    <div class="card">
+      <span class="code">CHC52021</span>
+      <h3>Diploma of Community Services</h3>
+      <p>For case workers and team leaders ready to formalise years of frontline experience.</p>
+      <div class="issuer">Delivered &amp; issued by [Partner RTO], RTO [XXXXX]</div>
+    </div>
+    <div class="card" style="border-style:dashed;background:#faf8fb">
+      <span class="code" style="background:var(--ink)">A&amp;B</span>
+      <h3>First Aid &amp; CPR — our own courses</h3>
+      <p>HLTAID009, HLTAID011 and HLTAID012 are delivered and issued by us directly.</p>
+      <div class="issuer">Delivered &amp; issued by A&amp;B First Aid Training, RTO 46055</div>
+    </div>
+  </div>
+</div></section>
+
+<section id="check"><div class="wrap">
+  <h2>Free eligibility check</h2>
+  <p class="lede">Two minutes, no obligation. You will get an answer on screen straight away.</p>
+
+  <div class="checker">
+    <div class="head">
+      <h3>Am I eligible for RPL?</h3>
+      <p id="stepLabel">Question 1 of 5</p>
+    </div>
+    <div class="bar"><i id="bar"></i></div>
+
+    <div id="qbox" class="q"></div>
+
+    <div class="nav" id="navbar">
+      <button class="link" id="back">Back</button>
+      <span style="font-size:13px;color:var(--ink-soft)">Your answers are only used to assess eligibility.</span>
+    </div>
+  </div>
+</div></section>
+
+<section class="faq" style="background:#fff;border-top:1px solid var(--line)"><div class="wrap">
+  <h2>Common questions</h2>
+  <details><summary>Is the qualification actually nationally recognised?</summary>
+    <p>Yes. It is issued by a Registered Training Organisation against a qualification on the national register, and it carries the same weight as one earned by sitting the full course.</p></details>
+  <details><summary>Does A&amp;B issue these certificates?</summary>
+    <p>No. A&amp;B First Aid Training issues its own first aid and CPR certificates only. The qualifications on this page are assessed and issued by the partner RTO named at the top of this page. We handle your enrolment, guidance and support.</p></details>
+  <details><summary>What if I have gaps in my evidence?</summary>
+    <p>That is normal. The assessor identifies exactly what is missing and you complete targeted gap training for that part only — not the whole qualification.</p></details>
+  <details><summary>How long does it take?</summary>
+    <p>It depends how quickly you gather your evidence. Most people are done within a few weeks to a few months of starting.</p></details>
+</div></section>
+
+<footer><div class="wrap">
+  <strong>A &amp; B First Aid Training</strong> — RTO 46055 · Unit 2, 156 Queen Street, St Marys NSW 2760 · 0423 427 765<br>
+  Qualifications shown on this page are delivered and issued by [Partner RTO Name], RTO code [XXXXX], under a written third-party agreement.
+</div></footer>
+
+<script>
+/* --- eligibility checker --------------------------------------------------
+   Five short questions, then a result. Scored so that real experience passes
+   and someone with none is redirected to a full course instead of a dead end. */
+const QS = [
+  { key:'field', q:'Which area do you work in?', hint:'Pick the closest match.',
+    opts:[['Aged care or home care',2],['Childcare or early education',2],['Disability support',2],
+          ['Community services or mental health',2],['None of these',0]] },
+  { key:'years', q:'How long have you worked in that area?', hint:'Paid work, including part-time and casual.',
+    opts:[['Less than 1 year',0],['1 to 2 years',1],['3 to 5 years',2],['More than 5 years',3]] },
+  { key:'current', q:'Are you working in the role now, or recently?', hint:'Assessors need to see current skills.',
+    opts:[['Yes, working now',2],['Left within the last 12 months',1],['Left more than a year ago',0]] },
+  { key:'evidence', q:'Can you get evidence from your workplace?', hint:'Payslips, position description, a reference from a supervisor.',
+    opts:[['Yes, all of that',2],['Some of it',1],['Not sure',1],['No',0]] },
+  { key:'usi', q:'Do you have a USI (Unique Student Identifier)?', hint:'Every student needs one. We can help you create it — it is free.',
+    opts:[['Yes',1],['No, but I can get one',1],['I do not know what that is',1]] }
+];
+
+let step = 0, score = 0, answers = {}, lead = {};
+const qbox = document.getElementById('qbox'), bar = document.getElementById('bar'),
+      label = document.getElementById('stepLabel'), back = document.getElementById('back'),
+      navbar = document.getElementById('navbar');
+
+function paintQuestion(){
+  const item = QS[step];
+  label.textContent = 'Question ' + (step+1) + ' of ' + (QS.length+1);
+  bar.style.width = ((step)/(QS.length+1)*100) + '%';
+  navbar.classList.remove('hide');
+  back.style.visibility = step === 0 ? 'hidden' : 'visible';
+  qbox.className = 'q';
+  qbox.innerHTML = '<h4>' + item.q + '</h4><p class="hint">' + item.hint + '</p><div class="opts"></div>';
+  const box = qbox.querySelector('.opts');
+  item.opts.forEach(function(o, i){
+    const b = document.createElement('button');
+    b.className = 'opt' + (answers[item.key] === i ? ' sel' : '');
+    b.textContent = o[0];
+    b.onclick = function(){ answers[item.key] = i; step++; step < QS.length ? paintQuestion() : paintDetails(); };
+    box.appendChild(b);
+  });
+}
+
+function paintDetails(){
+  label.textContent = 'Last step — where do we send your result?';
+  bar.style.width = (QS.length/(QS.length+1)*100) + '%';
+  back.style.visibility = 'visible';
+  qbox.innerHTML =
+    '<h4>Almost done</h4><p class="hint">So we can send your eligibility result and the evidence checklist.</p>' +
+    '<label class="field"><span>Full name</span><input id="f_name" placeholder="Your name"></label>' +
+    '<label class="field"><span>Email</span><input id="f_email" type="email" placeholder="you@example.com"></label>' +
+    '<label class="field"><span>Mobile</span><input id="f_phone" placeholder="04.."></label>' +
+    '<button class="btn" id="go" style="width:100%">See my result</button>';
+  document.getElementById('go').onclick = function(){
+    lead = { name:  document.getElementById('f_name').value.trim(),
+             email: document.getElementById('f_email').value.trim(),
+             phone: document.getElementById('f_phone').value.trim() };
+    if (!lead.name || lead.email.indexOf('@') < 0) { alert('Please enter your name and a valid email.'); return; }
+    paintResult();
+  };
+}
+
+function paintResult(){
+  score = QS.reduce(function(t, item){ return t + item.opts[answers[item.key]][1]; }, 0);
+  const strong = score >= 8, maybe = score >= 5 && score < 8;
+  bar.style.width = '100%';
+  label.textContent = 'Your result';
+  navbar.classList.add('hide');
+  qbox.className = 'result';
+
+  let head, body;
+  if (strong) {
+    head = 'Good news — RPL looks like a strong fit';
+    body = 'Based on your answers you have the experience an assessor is looking for. The next step is putting your evidence together.';
+  } else if (maybe) {
+    head = 'RPL may be possible for you';
+    body = 'You have relevant experience, but the assessor will need to look closely at your evidence before confirming. That review is free.';
+  } else {
+    head = "RPL isn't the right path right now";
+    body = 'You do not have enough recent workplace experience for a recognition pathway yet — but you can still get the qualification by doing the course itself, and we can point you to it.';
+  }
+
+  qbox.innerHTML =
+    '<div class="tick">' + (strong ? '&#10003;' : maybe ? '&#33;' : '&#8594;') + '</div>' +
+    '<h4>' + head + '</h4>' +
+    '<p style="color:var(--ink-soft);font-size:15.5px;margin:0">' +
+      (lead.name ? lead.name.split(' ')[0] + ', ' + body.charAt(0).toLowerCase() + body.slice(1) : body) + '</p>' +
+    '<ul>' +
+      '<li>A copy of this result has been sent to ' + (lead.email || 'your email') + '.</li>' +
+      '<li>One of our team will call you on ' + (lead.phone || 'your number') + ' within one business day.</li>' +
+      '<li>You will receive the evidence checklist so you can start gathering documents now.</li>' +
+    '</ul>' +
+    '<p style="font-size:13px;color:var(--ink-soft);margin-top:18px">Eligibility is indicative only. The formal assessment decision is made by [Partner RTO Name], RTO code [XXXXX].</p>' +
+    '<p style="font-size:13px;color:#a08fae;margin-top:6px"><em>Preview note: in the live version this submits to your Student Management System as a new lead — nothing is emailed from this demo.</em></p>';
+}
+
+back.onclick = function(){ if (step > 0) { step--; paintQuestion(); } };
+paintQuestion();
+</script>
+</body>
+</html>
